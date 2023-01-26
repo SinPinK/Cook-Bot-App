@@ -12,6 +12,7 @@ import { Input } from 'rsuite'
 import Grid from 'rsuite/Grid'
 import Row from 'rsuite/Row'
 import Col from 'rsuite/Col'
+import { BrowserRouter } from 'react-router-dom'
 
 import { Bot } from './bot/Bot'
 
@@ -44,13 +45,14 @@ function App() {
 
   return (
         <div className="show-container" >
-            <Bot/>
+        <BrowserRouter>
             <Container>
+
                 <Header>
                     <CustomNavbar/>
                 </Header>
-
                 <Content className='main-container' >
+                    <Bot/>
                     <div>
 
                         <Grid>
@@ -76,6 +78,8 @@ function App() {
                 </Content>
                 <CustomFooter />
             </Container>
+
+        </BrowserRouter>
         </div>
   )
 }

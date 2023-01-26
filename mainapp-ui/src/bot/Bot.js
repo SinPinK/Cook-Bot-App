@@ -8,7 +8,7 @@ import config from './config'
 import './Bot.css'
 
 export const Bot = () => {
-    const [isBotOpen, setIsBotOpen] = useState([])
+    const [isBotOpen, setIsBotOpen] = useState(false)
 
     const handleOpenBot = () => {
         if (isBotOpen === false) {
@@ -26,7 +26,7 @@ export const Bot = () => {
     }
 
     return (
-        <div className='appChatBotContainer' >
+        <div className='appChatbotContainer' >
             <button onClick={handleOpenBot} className='appChatbotButton' label='bot'>
                 bot
             </button>
