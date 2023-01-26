@@ -5,6 +5,7 @@ from rest_framework import status
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .models import User
 from .serializers import *
+from django.http import request
 from django.shortcuts import render
 
 
